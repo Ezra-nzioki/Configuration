@@ -7,6 +7,7 @@ import mobileLogo from "../assets/mobile-logo.png"
 import searchIcon from "../assets/icons/search-icon.png"
 import cartIcon from "../assets/icons/cart-icon.png"
 import sock from "../assets/products/athletic-cotton-socks-6-pairs.jpg"
+import {Link} from 'react-router-dom'
 
 
 export const tracking = () => {
@@ -17,9 +18,9 @@ export const tracking = () => {
 
         <div className="tracking-page">
         <div className="order-tracking">
-            <a className="back-to-orders-link link-primary" href="/orders">
+            <Link className="back-to-orders-link link-primary" to="/orders">
             View all orders
-            </a>
+            </Link>
 
             <div className="delivery-date">
             Arriving on Monday, June 13

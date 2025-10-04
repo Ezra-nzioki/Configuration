@@ -10,6 +10,7 @@ import buyAgainIcon from "../assets/icons/buy-again.png"
 import "../App.css"
 import Header from '../shared/header'
 import"./orders.css"
+import {Link} from 'react-router-dom'
 
 export const orders = () => {
   return (
@@ -63,11 +64,11 @@ export const orders = () => {
                 </div>
 
                 <div className="product-actions">
-                <a href="/tracking">
+                <Link to="/tracking">
                     <button className="track-package-button button-secondary">
                     Track package
                     </button>
-                </a>
+                </Link>
                 </div>
 
                 <div className="product-image-container">
@@ -91,11 +92,11 @@ export const orders = () => {
                 </div>
 
                 <div className="product-actions">
-                <a href="/tracking">
+                <Link to="/tracking">
                     <button className="track-package-button button-secondary">
                     Track package
                     </button>
-                </a>
+                </Link>
                 </div>
             </div>
             </div>
@@ -142,11 +143,11 @@ export const orders = () => {
                 </div>
 
                 <div className="product-actions">
-                <a href="/tracking">
+                <Link to="/tracking">
                     <button className="track-package-button button-secondary">
                     Track package
                     </button>
-                </a>
+                </Link>
                 </div>
             </div>
             </div>
