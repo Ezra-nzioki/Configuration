@@ -7,6 +7,7 @@ import ball from "../assets/products/intermediate-composite-basketball.jpg"
 import "../App.css"
 import"./checkout.css"
 import"./checkoutHeader.css"
+import {Link} from 'react-router-dom';
 
 export const checkOut = () => {
   return (
@@ -15,15 +16,15 @@ export const checkOut = () => {
             <div className="checkout-header">
             <div className="header-content">
                 <div className="checkout-header-left-section">
-                <a href="/">
+                <Link to="/">
                     <img className="logo" src={logo} />
                     <img className="mobile-logo" src={mobileLogo} />
-                </a>
+                </Link>
                 </div>
 
                 <div className="checkout-header-middle-section">
-                Checkout (<a className="return-to-home-link"
-                    href="/">3 items</a>)
+                    Checkout (<a className="return-to-home-link"
+                    to="/">3 items</a>)
                 </div>
 
                 <div className="checkout-header-right-section">
